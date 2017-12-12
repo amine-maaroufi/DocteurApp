@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail__docteur_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/OrangeColor"
+    tools:context="com.androidapplication.amine.docteurapp.Detail_Docteur_Activity">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rl_doc_details_scroll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_doc_details_featured"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/iv_doc_details_featured"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:alpha=".5"
+            android:background="#80000000">
+
+            <RatingBar
+                android:id="@+id/ratingBar_doctor_details"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/white"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/white"
+                android:secondaryProgressTint="@color/white"
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/tv_doc_details_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ratingBar_doctor_details"
+                android:layout_alignLeft="@+id/ratingBar_doctor_details"
+                android:layout_alignStart="@+id/ratingBar_doctor_details"
+                android:layout_marginBottom="5dp"
+                android:text="Experience"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_nom_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tv_doc_details_experience"
+                android:layout_marginLeft="85dp"
+                android:layout_marginStart="83dp"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_doc_details_featured"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Adress :" />
+
+            <TextView
+                android:id="@+id/txt_adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="New Text" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_adresse"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/darker_gray"></View>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp"
+                android:text="Tel :" />
+
+            <TextView
+                android:id="@+id/txt_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_adresse"
+                android:layout_alignStart="@+id/txt_adresse"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp"
+                android:text="New Text" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_tel"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/darker_gray"></View>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="10dp"
+                android:text="Speciality :" />
+
+            <TextView
+                android:id="@+id/txt_specialte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_tel"
+                android:layout_alignStart="@+id/txt_tel"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="10dp"
+                android:text="New Text" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_above="@+id/rl_education"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="About :"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/txt_apropos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="New Text" />
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/relativeLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Education :"
+                android:textSize="20dp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/txt_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="New Text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_drivelocation"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:paddingBottom="20dp"
+                android:src="@drawable/drive" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

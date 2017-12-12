@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+       android:background="@drawable/design_list_view">
+
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/icon_doc2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:text="Titre"
+                android:textColor="#ffffff"
+                android:textIsSelectable="false"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtsousTitre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:text="Sous Titre"
+                android:textColor="#ffffff"
+                android:textIsSelectable="false"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar_doctor_details"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/white"
+            android:secondaryProgressTint="@color/white"
+            android:stepSize="0.1"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/separateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/separateur_horiz" />
+
+</LinearLayout>
